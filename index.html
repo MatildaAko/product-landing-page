@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9a29d1fbc7.js" crossorigin="anonymous"></script>
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Spartan:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>ONNE Beauty</title>
 </head>
 
@@ -18,14 +19,17 @@
     <header id="header">
         <nav id="nav-bar">
             <div id="logo">
-                <a href="#top"><img id="header-img" src="https://img.wethrift.com/onne-beauty.jpg"></a>
+                <a href="#top"><img id="header-img" src="https://img.wethrift.com/onne-beauty.jpg" alt="ONNE Beauty logo"></a>
             </div>
             <div id="menu">
                 <div id="product-list"><a class="nav-link" href="#products">Products</a>
                     <div id="dropdown">
-                        <a class="navs" href="#sponge">Sponge</a>
-                        <a class="navs" href="#cleanser">Cleanser</a>
-                        <a class="navs" href="#cream">Cream</a>
+                        <ul>
+                            <li><a class="navs" href="#sponge">Sponge</a></li>
+                            <li><a class="navs" href="#cleanser">Cleanser</a></li>
+                            <li> <a class="navs" href="#cream">Cream</a></li>
+                        </ul>
+
                     </div>
                 </div>
                 <a class="nav-link" href="#video">Video</a>
@@ -46,32 +50,29 @@
         </div>
     </section>
     <section id="sponge">
-        <div class="product-box left">
+        <div class="product-box col-md-4 left">
             <h2 class="product-head">Skin Sparkling Sponge</h2>
             <p>Originating from the root vegetable of the Konjac tree, this delightful little facial sponge is rich in vitamins, proteins, lipids and fatty acids, making it perfect for exfoliating the skin. By thoroughly purifying the skin from toxins and
                 excess dirt with natural minerals such as copper and iron, this sponge will help to refine the texture and give a brighter complexion.</p>
             <p class="price">£11.99</p>
         </div>
-
-
     </section>
     <section id="cleanser">
-        <div class="product-box left">
+        <div class="product-box col-md-4 left">
             <h2 class="product-head">Clarifying Cleanser</h2>
             <p>Our Clarifying Cleanser has been carefully crafted to clean, clarify and correct the skin. With Rose Water for reducing redness and Chamomile for its potency in fighting inflammation and bacteria, this cleanser is ideal for restoring and protecting
                 the skin. The cleanser is excellent for sensitive skin due to the gentle properties of Calendula, which moisturises dry or chapped skin to leave the affected area smooth and soft.</p>
             <p class="price">£36.71</p>
         </div>
-        <div class="product-box right">
+        <div class="product-box col-md-4 right">
             <h2 class="product-head">Balancing Body Balm</h2>
             <p>Replenish, rehydrate and reinvigorate your skin every day with a powerful blend of coconut, cocoa butter and aloe vera, which works seamlessly to enhance your complexion. The Body Balm is perfect for soothing sunburns and painful bug bites,
                 with the anti-inflammatory and curative properties of Aloe Vera gel to reduce the appearance of dry skin and eczema.</p>
             <p class="price">£35.96</p>
         </div>
-
     </section>
     <section id="cream">
-        <div class="product-box right">
+        <div class="product-box col-md-4 right">
             <h2 class="product-head">Complexion Cream</h2>
             <p>Quenching the essence from natures finest ingredients, this daily moisturiser is formulated to nourish, balance and hydrate. The ONNE Complexion Cream is the airy, soothing answer to skin problems, from preventing oiliness to soothing dry
                 areas.
@@ -93,7 +94,6 @@
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..." required></textarea><br>
             <input id="submit" type="submit" value="Send Message">
         </form>
-
         <footer id="footer">
             <p id="footer-text">Website created by Matilda Ako &copy; Copyright 2020 ONNE Beauty</p>
             <div>
