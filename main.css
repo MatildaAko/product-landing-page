@@ -125,9 +125,9 @@
                 font-size: 70px;
             }
             
-            .sub-text {
-                font-family: 'Meddon', cursive;
-                ;
+            .sub-text,
+            label {
+                font-family: 'Caveat', cursive;
             }
             
             #products {
@@ -234,6 +234,7 @@
                 width: 55%;
                 margin: auto;
                 padding: 50px;
+                padding-bottom: 20px;
             }
             
             #form {
@@ -261,7 +262,7 @@
             }
             
             label {
-                font-size: 14px;
+                font-size: 20px;
                 color: black;
                 font-weight: 500;
                 opacity: 1;
@@ -347,6 +348,7 @@
                     width: 62%;
                     margin: auto;
                     padding: 50px;
+                    padding-bottom: 20px;
                 }
                 #form {
                     width: 62%;
@@ -355,6 +357,17 @@
                 input,
                 textarea {
                     margin-bottom: 15px;
+                }
+                i {
+                    font-size: 30px;
+                    color: black;
+                    padding: 0 15px;
+                }
+                .fa-pinterest {
+                    padding-right: 50px;
+                }
+                #footer-text {
+                    font-size: 14px;
                 }
             }
             
@@ -387,9 +400,8 @@
                     font-size: 50px;
                 }
                 .sub-text {
-                    font-size: 16px;
+                    font-size: 20px;
                     font-weight: 400;
-                    background-color: rgba(255, 255, 255, 0.5);
                     max-width: 80%;
                     margin: auto;
                 }
@@ -411,5 +423,16 @@
                 input,
                 textarea {
                     margin-bottom: 10px;
+                }
+                i {
+                    font-size: 15px;
+                    color: black;
+                    padding: 0 5px;
+                }
+                .fa-pinterest {
+                    padding-right: 10px;
+                }
+                #footer-text {
+                    font-size: 10px;
                 }
             }
