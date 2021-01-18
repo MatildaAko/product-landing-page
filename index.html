@@ -1,42 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/9a29d1fbc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Spartan:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 
-    <title>ONNE Beauty</title>
+    <link rel="stylesheet" href="main.css">
+
+    <title>O N N E Beauty</title>
 </head>
 
 <body>
-    <div id="top">
-    </div>
+    <div id="top"></div>
     <header id="header">
-        <nav id="nav-bar">
-            <div id="logo">
-                <a href="#top"><img id="header-img" src="https://img.wethrift.com/onne-beauty.jpg" alt="ONNE Beauty logo"></a>
-            </div>
-            <div id="menu">
-                <div id="product-list"><a class="nav-link" href="#products">Products</a>
-                    <div id="dropdown">
-                        <ul>
-                            <li><a class="navs" href="#sponge">Sponge</a></li>
-                            <li><a class="navs" href="#cleanser">Cleanser</a></li>
-                            <li> <a class="navs" href="#cream">Cream</a></li>
-                        </ul>
+        <nav id="nav-bar" class="navbar fixed-top navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a href="#top" class="navbar-brand">
+                    <img id="header-img" src="https://i.vimeocdn.com/portrait/21852956_640x640" alt="ONNE Beauty logo">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        </span></button>
+                <div id="navbarMenu" class="collapse justify-content-end navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#products" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#sponge">Sponge</a></li>
+                                <li><a class="dropdown-item" href="#cleanser">Cleanser</a></li>
+                                <li> <a class="dropdown-item" href="#cream">Cream</a></li>
+                            </ul>
+                        </li>
 
-                    </div>
+                        <li class="nav-item">
+                            <a href="#watch" class="nav-link">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact Us</a>
+                        </li>
+
+                    </ul>
                 </div>
-                <a class="nav-link" href="#video">Video</a>
-                <a class="nav-link" href="#contact">Contact Us</a>
             </div>
         </nav>
     </header>
+
     <section id="landing" class="background">
         <div class="landing-text">
             <h1 class="heading-text">O N N E Beauty</h1>
@@ -61,13 +73,14 @@
         <div class="product-box col-md-4 left">
             <h2 class="product-head">Clarifying Cleanser</h2>
             <p>Our Clarifying Cleanser has been carefully crafted to clean, clarify and correct the skin. With Rose Water for reducing redness and Chamomile for its potency in fighting inflammation and bacteria, this cleanser is ideal for restoring and protecting
-                the skin. The cleanser is excellent for sensitive skin due to the gentle properties of Calendula, which moisturises dry or chapped skin to leave the affected area smooth and soft.</p>
+                the skin. </p>
             <p class="price">£36.71</p>
         </div>
         <div class="product-box col-md-4 right">
             <h2 class="product-head">Balancing Body Balm</h2>
             <p>Replenish, rehydrate and reinvigorate your skin every day with a powerful blend of coconut, cocoa butter and aloe vera, which works seamlessly to enhance your complexion. The Body Balm is perfect for soothing sunburns and painful bug bites,
-                with the anti-inflammatory and curative properties of Aloe Vera gel to reduce the appearance of dry skin and eczema.</p>
+                with the anti-inflammatory and curative properties of Aloe Vera gel to reduce the appearance of dry skin and eczema.
+            </p>
             <p class="price">£35.96</p>
         </div>
     </section>
@@ -80,31 +93,45 @@
             <p class="price">£41.21 GBP</p>
         </div>
     </section>
-    <section id="watch">
-        <iframe id="video" width="635" height="355" src="https://www.youtube.com/embed/iz1D0yqP9IA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+    <div id="watch">
+        <iframe id="video" width="635" height="355" src="https://www.youtube.com/embed/iz1D0yqP9IA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <section id="contact">
         <div class="contact-header">
             <h2 class="heading-text">Contact Us</h2>
             <h3 class="sub-text">If you have any enquiries or wish to purchase our products, please contact us using the form below.</h3>
         </div>
         <form id="form" method="POST" action="https://www.freecodecamp.org/email-submit">
-            <input type="text" name="name" id="name" placeholder="Name..." required><br>
-            <input type="email" name="email" id="email" placeholder="Email..." required><br>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..." required></textarea><br>
+            <div class="floating-label">
+                <input type="text" name="name" id="name" placeholder="Name..." required>
+                <label for="name">Your name</label>
+            </div>
+            <div class="floating-label">
+                <input type="email" name="email" id="email" placeholder="Email..." required>
+                <label for="email">Your email</label>
+            </div>
+            <div class="floating-label">
+                <textarea name="message" id="message" cols="30" rows="8" placeholder="Your message here..." required></textarea>
+                <label for="message">Your message</label>
+            </div>
             <input id="submit" type="submit" value="Send Message">
         </form>
         <footer id="footer">
             <p id="footer-text">Website created by Matilda Ako &copy; Copyright 2020 ONNE Beauty</p>
             <div>
-                <a href="https://www.facebook.com/onnebeauty/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/onne_beauty/?hl=en"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.pinterest.co.uk/Onne_Beauty/_created/"><i class="fab fa-pinterest"></i>
+                <a href="https://www.facebook.com/onnebeauty/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/onne_beauty/?hl=en" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                <a href="https://www.pinterest.co.uk/Onne_Beauty/_created/" target="_blank"><i
+                            class="fab fa-pinterest"></i>
                     </a></div>
         </footer>
     </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-</script>
 
 </html>
